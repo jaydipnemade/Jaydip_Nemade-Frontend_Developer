@@ -2,7 +2,7 @@ import React from "react";
 
 function Navbar() {
   return (
-    <div className="mynavbar">
+    <div className="navbar">
       <svg version="1.1" x="0px" y="0px" viewBox="0 0 400 50" alt="SpaceX Logo">
         <title>SpaceX Logo</title>
         <g class="letter_s">
