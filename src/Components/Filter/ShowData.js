@@ -20,9 +20,9 @@ const ShowData = () => {
       try {
         const result = await fetchData(filters);
         setData(result);
-        setCurrentPage(1); // Reset to the first page when new data is fetched
+        setCurrentPage(1); 
       } catch (error) {
-        // Handle errors if needed
+       
         console.error("Error fetching data:", error.message);
       }
     };
@@ -33,12 +33,12 @@ const ShowData = () => {
   const resetFilters = () => {
     fetchData().then((result) => {
       setData(result);
-      setCurrentPage(1); // Reset to the first page when filters are reset
+      setCurrentPage(1); 
     });
     setFilters({ status: "", original_launch: "", type: "" });
   };
 
-  // Calculate the index range for the current page
+  
   const startIndex = (currentPage - 1) * ITEMS_PER_PAGE;
   const endIndex = startIndex + ITEMS_PER_PAGE;
   const displayedData = data.slice(startIndex, endIndex);

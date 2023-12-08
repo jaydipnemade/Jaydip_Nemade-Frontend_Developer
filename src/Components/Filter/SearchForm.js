@@ -1,4 +1,4 @@
-// SearchForm.js
+
 import React, { useState } from "react";
 import "./SearchForm.css";
 

@@ -1,4 +1,4 @@
-/* SearchForm.css */
+
 
 .search-form {
   max-width: 60%;
@@ -12,7 +12,7 @@ label {
 
 .input-container {
   display: flex;
-  gap: 1%; /* Adjust the gap as needed */
+  gap: 1%; 
   width: fit-content;
 }
 
@@ -58,7 +58,7 @@ label {
   }
 
   .input-container .form-control {
-    margin-right: 0; /* Remove margin between input fields on smaller screens */
+    margin-right: 0; 
   }
 
   .button-container {

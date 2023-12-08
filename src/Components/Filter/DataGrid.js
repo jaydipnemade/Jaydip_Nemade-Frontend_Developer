@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import "./Filter.css";
 
 const DataGrid = ({ data }) => {
-  const [additionalData, setAdditionalData] = useState({});
+  // const [additionalData, setAdditionalData] = useState({});
   const [selectedItem, setSelectedItem] = useState(null);
 
   useEffect(() => {
