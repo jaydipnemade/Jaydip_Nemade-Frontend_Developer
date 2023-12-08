@@ -1,0 +1,62 @@
+.banner-container {
+  position: relative;
+}
+
+.bg-video {
+  position: relative;
+  z-index: -1;
+  width: 100%;
+  height: auto;
+}
+.head {
+  font-size: 5ch;
+}
+
+.headline {
+  position: absolute;
+  width: 100%;
+  z-index: 4;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  text-align: center;
+  font-size: larger;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 970px) {
+  .headline {
+    font-size: 14px; 
+  }
+  .head {
+    font-size: 5ch;
+  }
+}
+@media (max-width: 748px) {
+  
+  .head {
+    font-size: 4ch;
+  }
+}
+@media (max-width: 590px) {
+ 
+  .head {
+    font-size: 3ch;
+  }
+  .headline{
+    font-size: 11px;
+    margin-top: 10%;
+  }
+}
+@media (max-width: 414px) {
+ 
+  .head {
+    font-size: 2ch;
+  }
+  .headline{
+    font-size: 9px;
+    margin-top: 10%;
+  }
+}
+
