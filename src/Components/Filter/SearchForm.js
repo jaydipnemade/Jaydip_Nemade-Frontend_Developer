@@ -9,21 +9,21 @@ const SearchForm = ({ setFilters, resetFilters }) => {
     type: "",
   });
 
-    const handleInputChange = (e) => {
-      setFormValues((prevValues) => ({
-        ...prevValues,
-        [e.target.name]: e.target.value,
-      }));
-    };
-//   const handleInputChange = (e) => {
-//     setFormValues((prevValues) => ({
-//       ...prevValues,
-//       [e.target.name]:
-//         e.target.type === "date"
-//           ? e.target.valueAsDate.toISOString().split("T")[0]
-//           : e.target.value,
-//     }));
-//   };
+  const handleInputChange = (e) => {
+    setFormValues((prevValues) => ({
+      ...prevValues,
+      [e.target.name]: e.target.value,
+    }));
+  };
+  //   const handleInputChange = (e) => {
+  //     setFormValues((prevValues) => ({
+  //       ...prevValues,
+  //       [e.target.name]:
+  //         e.target.type === "date"
+  //           ? e.target.valueAsDate.toISOString().split("T")[0]
+  //           : e.target.value,
+  //     }));
+  //   };
   const handleSubmit = (e) => {
     e.preventDefault();
     const filteredValues = removeEmptyValues(formValues);
@@ -42,7 +42,7 @@ const SearchForm = ({ setFilters, resetFilters }) => {
   };
 
   return (
-    <form className="search-form text-center mt-5 mb-5" onSubmit={handleSubmit}>
+    <form className="search-form text-center mt-5 " onSubmit={handleSubmit}>
       <div className="col-md-4 d-inline-block ps-1 pe-1">
         <label htmlFor="status" className="form-label ">
           Status:

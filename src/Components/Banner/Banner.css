@@ -49,14 +49,40 @@
     margin-top: 10%;
   }
 }
-@media (max-width: 414px) {
- 
-  .head {
-    font-size: 2ch;
+
+
+@media (max-width: 390px) {
+    .head {
+    font-size: 4ch;
   }
   .headline{
-    font-size: 9px;
+    font-size: 14px;
     margin-top: 10%;
   }
+.bg-video {
+  position: absolute;
+  height: 100% !important;
+  z-index: 1;
+  left: 0;
+  top: 0
+  ;
+  width: 100%;
+  /* height: auto; */
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  display: inline-block!important;
+  overflow-clip-margin: content-box;
+  overflow: clip;
 }
+
+  .banner-container {
+   
+    height: 100vh;
+ 
+  }
+}
+
+
 

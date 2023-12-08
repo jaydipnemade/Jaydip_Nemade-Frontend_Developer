@@ -17,7 +17,7 @@ const DataGrid = ({ data }) => {
   return (
     <div className="data-grid mx-auto my-auto">
       <div className="data-grid-container">
-        <div className="row ms-auto me-auto">
+        <div className="row ">
           {data.map((item, index) => (
             <div className="card col-md-3 m-3" key={index}>
               <img
@@ -28,12 +28,12 @@ const DataGrid = ({ data }) => {
               <div className="card-body cardDetails">
                 <span className="card-text">
                   <p className="line">
-                    <strong>Status of Mission: </strong>{" "}
+                    <strong>Status of Mission: </strong>
                     <span>{item.status}</span>
                   </p>
                   <p className="line">
                     <strong>Original Launch Date: </strong>
-                    <span>{item.original_launch.split("T")[0]}</span>
+                    <span>{item.original_launch}</span>
                     {/* {console.log(typeof item.original_launch)} */}
                   </p>
                   <p className="line">
@@ -65,7 +65,7 @@ const DataGrid = ({ data }) => {
                         className="modal-title fs-5"
                         id={`exampleModalLabel${index}`}
                       >
-                        {item.status}
+                        {item.capsule_serial}
                       </h1>
                       <button
                         type="button"
@@ -74,9 +74,37 @@ const DataGrid = ({ data }) => {
                         aria-label="Close"
                       ></button>
                     </div>
-                    <div className="modal-body">
-                      {/* Render additional data here */}
-                      {/* For example: {additionalData.someField} */}
+                    <div className="modal-body text-start">
+                      <p>
+                        <strong>Status:</strong> {item.status}
+                      </p>
+                      <p>
+                        <strong>Original Launch Date:</strong>{" "}
+                        {item.original_launch}
+                      </p>
+                      <p>
+                        <strong>Type:</strong> {item.type}
+                      </p>
+                      {/* Additional details based on your data structure */}
+                      {item.missions && item.missions.length > 0 && (
+                        <div>
+                          <p>
+                            <strong>Mission:</strong> {item.missions[0].name}
+                          </p>
+                          <p>
+                            <strong>Flight:</strong> {item.missions[0].flight}
+                          </p>
+                        </div>
+                      )}
+                      <p>
+                        <strong>Landings:</strong> {item.landings}
+                      </p>
+                      <p>
+                        <strong>Details:</strong> {item.details}
+                      </p>
+                      <p>
+                        <strong>Reuse Count:</strong> {item.reuse_count}
+                      </p>
                     </div>
                     <div className="modal-footer">
                       SPACEX © 2023 PRIVACY POLICY SUPPLIERS
