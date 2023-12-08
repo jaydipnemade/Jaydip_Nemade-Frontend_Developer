@@ -1,4 +1,4 @@
-spacex.php is for xampp paset it in htdocs folder
+spacex.php is for xampp paste it in htdocs folder
 
 # Getting Started with Create React App
 
