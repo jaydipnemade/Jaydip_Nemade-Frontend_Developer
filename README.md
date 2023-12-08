@@ -1,3 +1,5 @@
+spacex.php is for xampp paset it in htdocs folder
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
